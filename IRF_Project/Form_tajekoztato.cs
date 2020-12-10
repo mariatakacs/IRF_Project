@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace IRF_Project
 {
-    public partial class Form2 : Form
+    public partial class Form_tajekoztato : Form
     {
-        public Form2()
+        public Form_tajekoztato()
         {
             InitializeComponent();
         }

@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace IRF_Project
 {
-    public partial class Form1 : Form
+    public partial class Form_startup : Form
     {
-        public Form1()
+        public Form_startup()
         {
             InitializeComponent();
-        }
-
-        private void label12_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
