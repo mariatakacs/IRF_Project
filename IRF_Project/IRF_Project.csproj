@@ -67,11 +67,11 @@
     <Compile Include="Form_Main.Designer.cs">
       <DependentUpon>Form_Main.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form_startup.cs">
+    <Compile Include="Start_up.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form_startup.Designer.cs">
-      <DependentUpon>Form_startup.cs</DependentUpon>
+    <Compile Include="Start_up.Designer.cs">
+      <DependentUpon>Start_up.cs</DependentUpon>
     </Compile>
     <Compile Include="Form_tajekoztato.cs">
       <SubType>Form</SubType>
@@ -84,8 +84,8 @@
     <EmbeddedResource Include="Form_Main.resx">
       <DependentUpon>Form_Main.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form_startup.resx">
-      <DependentUpon>Form_startup.cs</DependentUpon>
+    <EmbeddedResource Include="Start_up.resx">
+      <DependentUpon>Start_up.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_tajekoztato.resx">
       <DependentUpon>Form_tajekoztato.cs</DependentUpon>
