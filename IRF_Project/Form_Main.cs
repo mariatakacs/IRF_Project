@@ -35,12 +35,13 @@ namespace IRF_Project
             this.Show();
         }
 
-        private void button1_Click(object sender, EventArgs e) //JÁTSZOK GOMB
+        private void button1_Click(object sender, EventArgs e) //JÁTSZOK GOMB - VÉLETLEN SZÁMOK
         {
 
             int talalt = 0;
             TextBox[] eredmeny = { sors_1, sors_2, sors_3, sors_4, sors_5 };
             TextBox[] tipp = { tipp_1, tipp_2, tipp_3, tipp_4, tipp_5 };
+            
             foreach (var x in tipp)
             {
                 if (x.Text == string.Empty || int.Parse(x.Text) < 1 || int.Parse(x.Text) > 90)
@@ -49,6 +50,7 @@ namespace IRF_Project
                     return;
                 }
             }
+            
             for (int i = 0; i < eredmeny.Length; i++)
             {
                 eredmeny[i].Text = Convert.ToString(r.Next(1, 90));
@@ -66,6 +68,9 @@ namespace IRF_Project
             label_talalt.Text = Convert.ToString(talalt);
             label_nyeremeny.Text = Convert.ToString(nyeremenyek[talalt]);
             played = true;
+
+            //Üzenet kivétele, mert kevés az esélye annak, hogy nyerjen:
+            //MessageBox.Show("Köszi, hogy játszottál! Eltalált számok:" + Convert.ToString(talalt) + "db, a nyereményed összege így: "+ Convert.ToString(nyeremenyek[talalt]));
 
         }
     }

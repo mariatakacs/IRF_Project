@@ -413,7 +413,7 @@
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label15.Location = new System.Drawing.Point(26, 60);
+            this.label15.Location = new System.Drawing.Point(26, 45);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(222, 25);
             this.label15.TabIndex = 3;
@@ -553,7 +553,7 @@
             this.label_nyeremeny.AutoSize = true;
             this.label_nyeremeny.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_nyeremeny.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label_nyeremeny.Location = new System.Drawing.Point(207, 60);
+            this.label_nyeremeny.Location = new System.Drawing.Point(207, 70);
             this.label_nyeremeny.Name = "label_nyeremeny";
             this.label_nyeremeny.Size = new System.Drawing.Size(0, 25);
             this.label_nyeremeny.TabIndex = 14;
