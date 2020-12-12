@@ -31,6 +31,11 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -39,38 +44,35 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.tipp_5 = new System.Windows.Forms.TextBox();
+            this.tipp_4 = new System.Windows.Forms.TextBox();
+            this.tipp_3 = new System.Windows.Forms.TextBox();
+            this.tipp_2 = new System.Windows.Forms.TextBox();
+            this.tipp_1 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.button4 = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.label17 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
+            this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.sors_5 = new System.Windows.Forms.TextBox();
+            this.sors_4 = new System.Windows.Forms.TextBox();
+            this.sors_3 = new System.Windows.Forms.TextBox();
+            this.sors_2 = new System.Windows.Forms.TextBox();
+            this.sors_1 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.label_talalt = new System.Windows.Forms.Label();
+            this.label_nyeremeny = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -90,6 +92,7 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "Játszok!";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
@@ -124,6 +127,41 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(634, 140);
             this.panel1.TabIndex = 2;
+            // 
+            // textBox15
+            // 
+            this.textBox15.Location = new System.Drawing.Point(470, 52);
+            this.textBox15.Name = "textBox15";
+            this.textBox15.Size = new System.Drawing.Size(155, 22);
+            this.textBox15.TabIndex = 16;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(489, 13);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(136, 22);
+            this.textBox4.TabIndex = 15;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(123, 88);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(502, 22);
+            this.textBox3.TabIndex = 14;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(123, 52);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(214, 22);
+            this.textBox2.TabIndex = 13;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(123, 13);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(214, 22);
+            this.textBox1.TabIndex = 12;
             // 
             // label9
             // 
@@ -205,11 +243,11 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Green;
-            this.panel2.Controls.Add(this.textBox8);
-            this.panel2.Controls.Add(this.textBox7);
-            this.panel2.Controls.Add(this.textBox6);
-            this.panel2.Controls.Add(this.textBox5);
-            this.panel2.Controls.Add(this.textBox10);
+            this.panel2.Controls.Add(this.tipp_5);
+            this.panel2.Controls.Add(this.tipp_4);
+            this.panel2.Controls.Add(this.tipp_3);
+            this.panel2.Controls.Add(this.tipp_2);
+            this.panel2.Controls.Add(this.tipp_1);
             this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Location = new System.Drawing.Point(20, 243);
@@ -217,45 +255,45 @@
             this.panel2.Size = new System.Drawing.Size(635, 59);
             this.panel2.TabIndex = 6;
             // 
-            // textBox8
+            // tipp_5
             // 
-            this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox8.Location = new System.Drawing.Point(443, 8);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(40, 38);
-            this.textBox8.TabIndex = 5;
+            this.tipp_5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.tipp_5.Location = new System.Drawing.Point(443, 8);
+            this.tipp_5.Name = "tipp_5";
+            this.tipp_5.Size = new System.Drawing.Size(40, 38);
+            this.tipp_5.TabIndex = 5;
             // 
-            // textBox7
+            // tipp_4
             // 
-            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox7.Location = new System.Drawing.Point(388, 8);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(40, 38);
-            this.textBox7.TabIndex = 4;
+            this.tipp_4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.tipp_4.Location = new System.Drawing.Point(388, 8);
+            this.tipp_4.Name = "tipp_4";
+            this.tipp_4.Size = new System.Drawing.Size(40, 38);
+            this.tipp_4.TabIndex = 4;
             // 
-            // textBox6
+            // tipp_3
             // 
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox6.Location = new System.Drawing.Point(333, 8);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(40, 38);
-            this.textBox6.TabIndex = 3;
+            this.tipp_3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.tipp_3.Location = new System.Drawing.Point(333, 8);
+            this.tipp_3.Name = "tipp_3";
+            this.tipp_3.Size = new System.Drawing.Size(40, 38);
+            this.tipp_3.TabIndex = 3;
             // 
-            // textBox5
+            // tipp_2
             // 
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox5.Location = new System.Drawing.Point(278, 8);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(40, 38);
-            this.textBox5.TabIndex = 2;
+            this.tipp_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.tipp_2.Location = new System.Drawing.Point(278, 8);
+            this.tipp_2.Name = "tipp_2";
+            this.tipp_2.Size = new System.Drawing.Size(40, 38);
+            this.tipp_2.TabIndex = 2;
             // 
-            // textBox10
+            // tipp_1
             // 
-            this.textBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox10.Location = new System.Drawing.Point(223, 8);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(40, 38);
-            this.textBox10.TabIndex = 1;
+            this.tipp_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.tipp_1.Location = new System.Drawing.Point(223, 8);
+            this.tipp_1.Name = "tipp_1";
+            this.tipp_1.Size = new System.Drawing.Size(40, 38);
+            this.tipp_1.TabIndex = 1;
             // 
             // label3
             // 
@@ -323,9 +361,22 @@
             this.panel4.Size = new System.Drawing.Size(674, 605);
             this.panel4.TabIndex = 2;
             // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.button4.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Location = new System.Drawing.Point(21, 540);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(101, 39);
+            this.button4.TabIndex = 13;
+            this.button4.Text = "Kilépés";
+            this.button4.UseVisualStyleBackColor = false;
+            // 
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.Green;
+            this.panel7.Controls.Add(this.label_nyeremeny);
+            this.panel7.Controls.Add(this.label_talalt);
             this.panel7.Controls.Add(this.label17);
             this.panel7.Controls.Add(this.button3);
             this.panel7.Controls.Add(this.label15);
@@ -335,6 +386,38 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(635, 100);
             this.panel7.TabIndex = 7;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Modern No. 20", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label17.Location = new System.Drawing.Point(408, 70);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(0, 30);
+            this.label17.TabIndex = 4;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.Yellow;
+            this.button3.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(460, 10);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(157, 75);
+            this.button3.TabIndex = 12;
+            this.button3.Text = "Eredmények exportálása";
+            this.button3.UseVisualStyleBackColor = false;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label15.Location = new System.Drawing.Point(26, 60);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(222, 25);
+            this.label15.TabIndex = 3;
+            this.label15.Text = "Nyereményed összege:";
             // 
             // label16
             // 
@@ -393,56 +476,56 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.Chartreuse;
-            this.panel5.Controls.Add(this.textBox9);
-            this.panel5.Controls.Add(this.textBox11);
-            this.panel5.Controls.Add(this.textBox12);
-            this.panel5.Controls.Add(this.textBox13);
-            this.panel5.Controls.Add(this.textBox14);
+            this.panel5.Controls.Add(this.sors_5);
+            this.panel5.Controls.Add(this.sors_4);
+            this.panel5.Controls.Add(this.sors_3);
+            this.panel5.Controls.Add(this.sors_2);
+            this.panel5.Controls.Add(this.sors_1);
             this.panel5.Controls.Add(this.label10);
             this.panel5.Location = new System.Drawing.Point(20, 308);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(634, 120);
             this.panel5.TabIndex = 7;
             // 
-            // textBox9
+            // sors_5
             // 
-            this.textBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox9.Location = new System.Drawing.Point(444, 61);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(40, 38);
-            this.textBox9.TabIndex = 5;
+            this.sors_5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.sors_5.Location = new System.Drawing.Point(444, 61);
+            this.sors_5.Name = "sors_5";
+            this.sors_5.Size = new System.Drawing.Size(40, 38);
+            this.sors_5.TabIndex = 5;
             // 
-            // textBox11
+            // sors_4
             // 
-            this.textBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox11.Location = new System.Drawing.Point(370, 61);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(40, 38);
-            this.textBox11.TabIndex = 4;
+            this.sors_4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.sors_4.Location = new System.Drawing.Point(370, 61);
+            this.sors_4.Name = "sors_4";
+            this.sors_4.Size = new System.Drawing.Size(40, 38);
+            this.sors_4.TabIndex = 4;
             // 
-            // textBox12
+            // sors_3
             // 
-            this.textBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox12.Location = new System.Drawing.Point(296, 61);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(40, 38);
-            this.textBox12.TabIndex = 3;
+            this.sors_3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.sors_3.Location = new System.Drawing.Point(296, 61);
+            this.sors_3.Name = "sors_3";
+            this.sors_3.Size = new System.Drawing.Size(40, 38);
+            this.sors_3.TabIndex = 3;
             // 
-            // textBox13
+            // sors_2
             // 
-            this.textBox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox13.Location = new System.Drawing.Point(222, 61);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(40, 38);
-            this.textBox13.TabIndex = 2;
+            this.sors_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.sors_2.Location = new System.Drawing.Point(222, 61);
+            this.sors_2.Name = "sors_2";
+            this.sors_2.Size = new System.Drawing.Size(40, 38);
+            this.sors_2.TabIndex = 2;
             // 
-            // textBox14
+            // sors_1
             // 
-            this.textBox14.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox14.Location = new System.Drawing.Point(148, 61);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(40, 38);
-            this.textBox14.TabIndex = 1;
+            this.sors_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.sors_1.Location = new System.Drawing.Point(148, 61);
+            this.sors_1.Name = "sors_1";
+            this.sors_1.Size = new System.Drawing.Size(40, 38);
+            this.sors_1.TabIndex = 1;
             // 
             // label10
             // 
@@ -455,83 +538,25 @@
             this.label10.TabIndex = 0;
             this.label10.Text = "Kihúzott nyertes számok:";
             // 
-            // label15
+            // label_talalt
             // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label15.Location = new System.Drawing.Point(26, 60);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(222, 25);
-            this.label15.TabIndex = 3;
-            this.label15.Text = "Nyereményed összege:";
+            this.label_talalt.AutoSize = true;
+            this.label_talalt.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_talalt.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label_talalt.Location = new System.Drawing.Point(254, 10);
+            this.label_talalt.Name = "label_talalt";
+            this.label_talalt.Size = new System.Drawing.Size(0, 25);
+            this.label_talalt.TabIndex = 13;
             // 
-            // label17
+            // label_nyeremeny
             // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Modern No. 20", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label17.Location = new System.Drawing.Point(408, 70);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(0, 30);
-            this.label17.TabIndex = 4;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.Yellow;
-            this.button3.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(460, 10);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(157, 75);
-            this.button3.TabIndex = 12;
-            this.button3.Text = "Eredmények exportálása";
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.button4.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(21, 540);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(101, 39);
-            this.button4.TabIndex = 13;
-            this.button4.Text = "Kilépés";
-            this.button4.UseVisualStyleBackColor = false;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(123, 13);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(214, 22);
-            this.textBox1.TabIndex = 12;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(123, 52);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(214, 22);
-            this.textBox2.TabIndex = 13;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(123, 88);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(502, 22);
-            this.textBox3.TabIndex = 14;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(489, 13);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(136, 22);
-            this.textBox4.TabIndex = 15;
-            // 
-            // textBox15
-            // 
-            this.textBox15.Location = new System.Drawing.Point(470, 52);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(155, 22);
-            this.textBox15.TabIndex = 16;
+            this.label_nyeremeny.AutoSize = true;
+            this.label_nyeremeny.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_nyeremeny.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label_nyeremeny.Location = new System.Drawing.Point(207, 60);
+            this.label_nyeremeny.Name = "label_nyeremeny";
+            this.label_nyeremeny.Size = new System.Drawing.Size(0, 25);
+            this.label_nyeremeny.TabIndex = 14;
             // 
             // Form_Main
             // 
@@ -571,22 +596,22 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox tipp_1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox tipp_5;
+        private System.Windows.Forms.TextBox tipp_4;
+        private System.Windows.Forms.TextBox tipp_3;
+        private System.Windows.Forms.TextBox tipp_2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.TextBox sors_5;
+        private System.Windows.Forms.TextBox sors_4;
+        private System.Windows.Forms.TextBox sors_3;
+        private System.Windows.Forms.TextBox sors_2;
+        private System.Windows.Forms.TextBox sors_1;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Panel panel6;
@@ -605,6 +630,8 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label_nyeremeny;
+        private System.Windows.Forms.Label label_talalt;
     }
 }
 

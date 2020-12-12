@@ -110,7 +110,7 @@ namespace IRF_Project
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // Form_startup
+            // Start_up
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -123,8 +123,9 @@ namespace IRF_Project
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
-            this.Name = "Form_startup";
+            this.Name = "Start_up";
             this.Text = "Form_startup";
+            this.Load += new System.EventHandler(this.Start_up_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

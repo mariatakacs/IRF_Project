@@ -1,0 +1,16 @@
+C:\Users\User\source\repos\mariatakacs\IRF_Project\IRF_Project\bin\Debug\Adatbázis.mdf
+C:\Users\User\source\repos\mariatakacs\IRF_Project\IRF_Project\bin\Debug\Adatbázis_log.ldf
+C:\Users\User\source\repos\mariatakacs\IRF_Project\IRF_Project\bin\Debug\Database1.mdf
+C:\Users\User\source\repos\mariatakacs\IRF_Project\IRF_Project\bin\Debug\Database1_log.ldf
+C:\Users\User\source\repos\mariatakacs\IRF_Project\IRF_Project\bin\Debug\IRF_Project.exe.config
+C:\Users\User\source\repos\mariatakacs\IRF_Project\IRF_Project\bin\Debug\IRF_Project.exe
+C:\Users\User\source\repos\mariatakacs\IRF_Project\IRF_Project\bin\Debug\IRF_Project.pdb
+C:\Users\User\source\repos\mariatakacs\IRF_Project\IRF_Project\obj\Debug\IRF_Project.csprojAssemblyReference.cache
+C:\Users\User\source\repos\mariatakacs\IRF_Project\IRF_Project\obj\Debug\IRF_Project.Form_Main.resources
+C:\Users\User\source\repos\mariatakacs\IRF_Project\IRF_Project\obj\Debug\IRF_Project.Start_up.resources
+C:\Users\User\source\repos\mariatakacs\IRF_Project\IRF_Project\obj\Debug\IRF_Project.Form_tajekoztato.resources
+C:\Users\User\source\repos\mariatakacs\IRF_Project\IRF_Project\obj\Debug\IRF_Project.Properties.Resources.resources
+C:\Users\User\source\repos\mariatakacs\IRF_Project\IRF_Project\obj\Debug\IRF_Project.csproj.GenerateResource.cache
+C:\Users\User\source\repos\mariatakacs\IRF_Project\IRF_Project\obj\Debug\IRF_Project.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\mariatakacs\IRF_Project\IRF_Project\obj\Debug\IRF_Project.exe
+C:\Users\User\source\repos\mariatakacs\IRF_Project\IRF_Project\obj\Debug\IRF_Project.pdb

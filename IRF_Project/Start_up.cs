@@ -52,9 +52,15 @@ namespace IRF_Project
                 this.Hide();
                 f2.ShowDialog();
                 this.Show();
+                MessageBox.Show("Sok sikert a játékhoz!");
             }
             else
                 MessageBox.Show("A megadott username és/vagy jelszó hibás!");
+        }
+
+        private void Start_up_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

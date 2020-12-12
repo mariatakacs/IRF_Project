@@ -1,6 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\IRF_Project",
+    "\\IRF_Project\\bin",
+    "\\IRF_Project\\obj",
+    "\\IRF_Project\\Properties"
   ],
+  "SelectedNode": "\\IRF_Project.sln",
   "PreviewInSolutionExplorer": false
 }
