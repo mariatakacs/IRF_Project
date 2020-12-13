@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Excel = Microsoft.Office.Interop.Excel;
+using System.Reflection;
 
 namespace IRF_Project
 {
@@ -73,5 +75,44 @@ namespace IRF_Project
             //MessageBox.Show("Köszi, hogy játszottál! Eltalált számok:" + Convert.ToString(talalt) + "db, a nyereményed összege így: "+ Convert.ToString(nyeremenyek[talalt]));
 
         }
+
+        private void Excel_export_Click(object sender, EventArgs e)
+        {
+            if (played == true)
+            {
+                Excel_export();
+                
+            }
+            else
+            {
+                MessageBox.Show("Még nem játszottál...Kérlek először játsz egyet.");
+            }
+
+        }
+        private void Excel_export()
+        {
+            try
+            {
+                xlApp = new Excel.Application();
+                xlWB = xlApp.Workbooks.Add(Missing.Value);
+                xlSheet = xlWB.ActiveSheet;
+                CreateTable();
+                xlApp.Visible = true;
+                xlApp.UserControl = true;
+            }
+            catch (Exception ex) // Hibakezelés a beépített hibaüzenettel
+            {
+                string errMsg = string.Format("Error: {0}\nLine: {1}", ex.Message, ex.Source);
+                MessageBox.Show(errMsg, "Error");
+
+                // Hiba esetén az Excel applikáció bezárása automatikusan
+                xlWB.Close(false, Type.Missing, Type.Missing);
+                xlApp.Quit();
+                xlWB = null;
+                xlApp = null;
+            }
+        }
+
+
     }
 }

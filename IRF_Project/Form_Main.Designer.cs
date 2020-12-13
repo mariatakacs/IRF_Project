@@ -56,8 +56,10 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.label_nyeremeny = new System.Windows.Forms.Label();
+            this.label_talalt = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
+            this.Export_button = new System.Windows.Forms.Button();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
@@ -71,8 +73,6 @@
             this.sors_2 = new System.Windows.Forms.TextBox();
             this.sors_1 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.label_talalt = new System.Windows.Forms.Label();
-            this.label_nyeremeny = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -378,7 +378,7 @@
             this.panel7.Controls.Add(this.label_nyeremeny);
             this.panel7.Controls.Add(this.label_talalt);
             this.panel7.Controls.Add(this.label17);
-            this.panel7.Controls.Add(this.button3);
+            this.panel7.Controls.Add(this.Export_button);
             this.panel7.Controls.Add(this.label15);
             this.panel7.Controls.Add(this.label16);
             this.panel7.Controls.Add(this.label14);
@@ -386,6 +386,26 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(635, 100);
             this.panel7.TabIndex = 7;
+            // 
+            // label_nyeremeny
+            // 
+            this.label_nyeremeny.AutoSize = true;
+            this.label_nyeremeny.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_nyeremeny.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label_nyeremeny.Location = new System.Drawing.Point(207, 70);
+            this.label_nyeremeny.Name = "label_nyeremeny";
+            this.label_nyeremeny.Size = new System.Drawing.Size(0, 25);
+            this.label_nyeremeny.TabIndex = 14;
+            // 
+            // label_talalt
+            // 
+            this.label_talalt.AutoSize = true;
+            this.label_talalt.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_talalt.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label_talalt.Location = new System.Drawing.Point(254, 10);
+            this.label_talalt.Name = "label_talalt";
+            this.label_talalt.Size = new System.Drawing.Size(0, 25);
+            this.label_talalt.TabIndex = 13;
             // 
             // label17
             // 
@@ -397,16 +417,17 @@
             this.label17.Size = new System.Drawing.Size(0, 30);
             this.label17.TabIndex = 4;
             // 
-            // button3
+            // Export_button
             // 
-            this.button3.BackColor = System.Drawing.Color.Yellow;
-            this.button3.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(460, 10);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(157, 75);
-            this.button3.TabIndex = 12;
-            this.button3.Text = "Eredmények exportálása";
-            this.button3.UseVisualStyleBackColor = false;
+            this.Export_button.BackColor = System.Drawing.Color.Yellow;
+            this.Export_button.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Export_button.Location = new System.Drawing.Point(460, 10);
+            this.Export_button.Name = "Export_button";
+            this.Export_button.Size = new System.Drawing.Size(157, 75);
+            this.Export_button.TabIndex = 12;
+            this.Export_button.Text = "Eredmények exportálása";
+            this.Export_button.UseVisualStyleBackColor = false;
+            this.Export_button.Click += new System.EventHandler(this.Excel_export_Click);
             // 
             // label15
             // 
@@ -538,26 +559,6 @@
             this.label10.TabIndex = 0;
             this.label10.Text = "Kihúzott nyertes számok:";
             // 
-            // label_talalt
-            // 
-            this.label_talalt.AutoSize = true;
-            this.label_talalt.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_talalt.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label_talalt.Location = new System.Drawing.Point(254, 10);
-            this.label_talalt.Name = "label_talalt";
-            this.label_talalt.Size = new System.Drawing.Size(0, 25);
-            this.label_talalt.TabIndex = 13;
-            // 
-            // label_nyeremeny
-            // 
-            this.label_nyeremeny.AutoSize = true;
-            this.label_nyeremeny.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_nyeremeny.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label_nyeremeny.Location = new System.Drawing.Point(207, 70);
-            this.label_nyeremeny.Name = "label_nyeremeny";
-            this.label_nyeremeny.Size = new System.Drawing.Size(0, 25);
-            this.label_nyeremeny.TabIndex = 14;
-            // 
             // Form_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -628,7 +629,7 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button Export_button;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label_nyeremeny;
         private System.Windows.Forms.Label label_talalt;
