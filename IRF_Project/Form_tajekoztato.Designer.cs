@@ -36,7 +36,13 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.label19 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
@@ -51,17 +57,11 @@
             this.label8 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.label23 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.panel5.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -146,6 +146,62 @@
             this.panel1.Size = new System.Drawing.Size(378, 182);
             this.panel1.TabIndex = 7;
             // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.White;
+            this.panel4.Controls.Add(this.label23);
+            this.panel4.Controls.Add(this.label22);
+            this.panel4.Controls.Add(this.label6);
+            this.panel4.Controls.Add(this.label21);
+            this.panel4.Controls.Add(this.label5);
+            this.panel4.Controls.Add(this.label20);
+            this.panel4.Controls.Add(this.label4);
+            this.panel4.Controls.Add(this.label3);
+            this.panel4.Location = new System.Drawing.Point(8, 38);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(356, 127);
+            this.panel4.TabIndex = 6;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Modern No. 20", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Location = new System.Drawing.Point(17, 101);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(254, 20);
+            this.label23.TabIndex = 6;
+            this.label23.Text = "5) Exportáld ki excelbe az adatokat";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Modern No. 20", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(17, 78);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(201, 20);
+            this.label22.TabIndex = 5;
+            this.label22.Text = "4) Nézd meg, hogy nyertél-e";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Modern No. 20", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(17, 32);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(280, 20);
+            this.label21.TabIndex = 3;
+            this.label21.Text = "2) Adj meg 5 db számot : 1 és 90 között";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Modern No. 20", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(17, 9);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(158, 20);
+            this.label20.TabIndex = 2;
+            this.label20.Text = "1) Írd be az adataidat";
+            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
@@ -155,6 +211,26 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(378, 216);
             this.panel2.TabIndex = 8;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.White;
+            this.panel5.Controls.Add(this.label19);
+            this.panel5.Controls.Add(this.label18);
+            this.panel5.Controls.Add(this.label17);
+            this.panel5.Controls.Add(this.label16);
+            this.panel5.Controls.Add(this.label15);
+            this.panel5.Controls.Add(this.label14);
+            this.panel5.Controls.Add(this.label13);
+            this.panel5.Controls.Add(this.label12);
+            this.panel5.Controls.Add(this.label11);
+            this.panel5.Controls.Add(this.label10);
+            this.panel5.Controls.Add(this.label9);
+            this.panel5.Controls.Add(this.label8);
+            this.panel5.Location = new System.Drawing.Point(16, 37);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(344, 161);
+            this.panel5.TabIndex = 18;
             // 
             // label19
             // 
@@ -305,82 +381,7 @@
             this.button1.TabIndex = 10;
             this.button1.Text = "Elfogadás";
             this.button1.UseVisualStyleBackColor = false;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.White;
-            this.panel4.Controls.Add(this.label23);
-            this.panel4.Controls.Add(this.label22);
-            this.panel4.Controls.Add(this.label6);
-            this.panel4.Controls.Add(this.label21);
-            this.panel4.Controls.Add(this.label5);
-            this.panel4.Controls.Add(this.label20);
-            this.panel4.Controls.Add(this.label4);
-            this.panel4.Controls.Add(this.label3);
-            this.panel4.Location = new System.Drawing.Point(8, 38);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(356, 127);
-            this.panel4.TabIndex = 6;
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Modern No. 20", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(17, 9);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(158, 20);
-            this.label20.TabIndex = 2;
-            this.label20.Text = "1) Írd be az adataidat";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Modern No. 20", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(17, 32);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(280, 20);
-            this.label21.TabIndex = 3;
-            this.label21.Text = "2) Adj meg 5 db számot : 1 és 90 között";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Modern No. 20", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(17, 78);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(201, 20);
-            this.label22.TabIndex = 5;
-            this.label22.Text = "4) Nézd meg, hogy nyertél-e";
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.White;
-            this.panel5.Controls.Add(this.label19);
-            this.panel5.Controls.Add(this.label18);
-            this.panel5.Controls.Add(this.label17);
-            this.panel5.Controls.Add(this.label16);
-            this.panel5.Controls.Add(this.label15);
-            this.panel5.Controls.Add(this.label14);
-            this.panel5.Controls.Add(this.label13);
-            this.panel5.Controls.Add(this.label12);
-            this.panel5.Controls.Add(this.label11);
-            this.panel5.Controls.Add(this.label10);
-            this.panel5.Controls.Add(this.label9);
-            this.panel5.Controls.Add(this.label8);
-            this.panel5.Location = new System.Drawing.Point(16, 37);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(344, 161);
-            this.panel5.TabIndex = 18;
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Modern No. 20", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(17, 101);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(254, 20);
-            this.label23.TabIndex = 6;
-            this.label23.Text = "5) Exportáld ki excelbe az adatokat";
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form_tajekoztato
             // 
@@ -396,14 +397,14 @@
             this.Text = "Form2";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.ResumeLayout(false);
 
         }

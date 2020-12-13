@@ -16,5 +16,11 @@ namespace IRF_Project
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+           // MessageBox.Show("Köszönöm, hogy elfogadtad a feltételeket!");
+        }
     }
 }

@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.Remoting.Contexts;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -14,6 +15,10 @@ namespace IRF_Project
 {
     public partial class Form_Main : Form
     {
+        Excel.Application xlApp; // A Microsoft Excel alkalmazás
+        Excel.Workbook xlWB; // A létrehozott munkafüzet
+        Excel.Worksheet xlSheet; // Munkalap a munkafüzeten belül
+
         //JÁTÉK RÉSZHEZ
         Random r = new Random();
         int[] nyeremenyek = { 0, 100, 2000, 5000, 10000, 25000 };
@@ -81,7 +86,7 @@ namespace IRF_Project
             if (played == true)
             {
                 Excel_export();
-                
+                FormatTable();
             }
             else
             {
@@ -111,8 +116,92 @@ namespace IRF_Project
                 xlWB = null;
                 xlApp = null;
             }
+
+            
+        }
+
+        private void CreateTable()
+        {
+
+            string[] headers = new string[] {
+             "Username",
+             "Teljes Név",
+             "Játék dátuma",
+             "1. tipp",
+             "2. tipp",
+             "3. tipp",
+             "4. tipp",
+             "5. tipp",
+             "Találatok száma",
+             "Nyeremény összege"};
+            string[] tartalom = { textBox1.Text, textBox2.Text, (DateTime.Today).ToString("dd/MM/yyy"), tipp_1.Text, tipp_2.Text, tipp_3.Text, tipp_4.Text, tipp_5.Text, label_talalt.Text, Convert.ToString(nyeremenyek[int.Parse(label_talalt.Text)]) };
+            for (int i = 0; i < headers.Length; i++)
+            {
+                xlSheet.Cells[1, (i + 1)] = headers[i];
+                xlSheet.Cells[2, (i + 1)] = tartalom[i];
+
+            }
+           
+
+        }
+        private string GetCell(int x, int y) // EXCEL FORMÁZÁSÁHOZ
+        {
+            string ExcelCoordinate = "";
+            int dividend = y;
+            int modulo;
+
+            while (dividend > 0)
+            {
+                modulo = (dividend - 1) % 26;
+                ExcelCoordinate = Convert.ToChar(65 + modulo).ToString() + ExcelCoordinate;
+                dividend = (int)((dividend - modulo) / 26);
+            }
+            ExcelCoordinate += x.ToString();
+
+            return ExcelCoordinate;
         }
 
 
+        private void FormatTable() 
+        {
+            int lastRowID = xlSheet.UsedRange.Rows.Count;
+            int lastColID = xlSheet.UsedRange.Columns.Count;
+            Excel.Range headerRange = xlSheet.get_Range(GetCell(1, 1), GetCell(1, lastColID));
+            headerRange.Font.Bold = true;
+            headerRange.VerticalAlignment = Excel.XlVAlign.xlVAlignCenter;
+            headerRange.HorizontalAlignment = Excel.XlHAlign.xlHAlignCenter;
+            headerRange.EntireColumn.AutoFit();
+            headerRange.RowHeight = 40;
+            headerRange.Interior.Color = Color.LightBlue;
+            headerRange.BorderAround2(Excel.XlLineStyle.xlContinuous, Excel.XlBorderWeight.xlThick);
+
+
+            Excel.Range tableRange = xlSheet.get_Range(GetCell(1, 1), GetCell(lastRowID, lastColID));
+            tableRange.BorderAround2(Excel.XlLineStyle.xlContinuous, Excel.XlBorderWeight.xlThick);
+
+            Excel.Range firstColRange = xlSheet.get_Range(GetCell(2, 1), GetCell(lastRowID, 1));
+            firstColRange.Font.Bold = true;
+            firstColRange.Interior.Color = Color.LightYellow;
+
+            Excel.Range lastColRange = xlSheet.get_Range(GetCell(2, lastColID), GetCell(lastRowID, lastColID));
+            lastColRange.Interior.Color = Color.LightGreen;
+            
+        }
+
+        private void panel5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
+

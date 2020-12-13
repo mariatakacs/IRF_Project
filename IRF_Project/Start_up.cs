@@ -15,7 +15,7 @@ namespace IRF_Project
     {
         List<string> users = new List<string>();
         List<string> pass = new List<string>();
-        public static string logolt_user = "";
+        public static string logolt_user = ""; //el akarom érni később
       
         public Start_up()
         {
@@ -24,7 +24,7 @@ namespace IRF_Project
             ActiveControl = textBox1;
         }
 
-        public void LoadData() //BETÖLTJÜK AZ ADATOKAT - 4.gyakorlat alapján
+        public void LoadData() 
         {
 
             using (var sr = new StreamReader("jelszavak.csv"))
@@ -40,7 +40,7 @@ namespace IRF_Project
 
             private void button2_Click(object sender, EventArgs e) //KILÉPÉS
             {
-
+            this.Close();
             }
 
         private void button1_Click(object sender, EventArgs e) //BEJELENTKEZÉS A FELÜLETRE

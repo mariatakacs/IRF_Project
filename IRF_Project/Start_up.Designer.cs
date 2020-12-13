@@ -124,7 +124,7 @@ namespace IRF_Project
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Name = "Start_up";
-            this.Text = "Form_startup";
+            this.Text = "Start_up";
             this.Load += new System.EventHandler(this.Start_up_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
