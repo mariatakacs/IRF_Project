@@ -28,7 +28,7 @@ namespace IRF_Project
         {
             InitializeComponent();
             //LINQ lekérdezés
-            var user = from a in context.Jatekosok_adatai
+            /*var user = from a in context.Jatekosok_adatai
                        where = a.USERNAME = Start_up.logolt_user
                        select new
                        
@@ -43,7 +43,7 @@ namespace IRF_Project
             textBox2.Text = user.TELJES_NÉV;
             textBox3.Text = user.SZÜLETÉSI_DÁTUM;
             textBox4.Text = user.LAKCÍM;
-            textBox5.Text = user.TELEFONSZÁM;
+            textBox5.Text = user.TELEFONSZÁM;*/
 
             tipp_1.KeyPress += ValidateKeyPress;
             tipp_2.KeyPress += ValidateKeyPress;
