@@ -27,8 +27,8 @@ namespace IRF_Project
         public Form_Main()
         {
             InitializeComponent();
-            //LINQ lekérdezés
-            /*var user = from a in context.Jatekosok_adatai
+            //LINQ lekérdezéshez
+           /* var user = from a in context.Jatekosok_adatai
                        where = a.USERNAME = Start_up.logolt_user
                        select new
                        
@@ -112,9 +112,6 @@ namespace IRF_Project
             label_talalt.Text = Convert.ToString(talalt);
             label_nyeremeny.Text = Convert.ToString(nyeremenyek[talalt]);
             played = true;
-
-            //Üzenet kivétele, mert kevés az esélye annak, hogy nyerjen:
-            //MessageBox.Show("Köszi, hogy játszottál! Eltalált számok:" + Convert.ToString(talalt) + "db, a nyereményed összege így: "+ Convert.ToString(nyeremenyek[talalt]));
 
         }
 
