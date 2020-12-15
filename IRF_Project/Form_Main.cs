@@ -27,6 +27,34 @@ namespace IRF_Project
         public Form_Main()
         {
             InitializeComponent();
+            //LINQ lekérdezés
+            var user = from a in context.Jatekosok_adatai
+                       where = a.USERNAME = Start_up.logolt_user
+                       select new
+                       
+                       {
+                           a.USERNAME
+                           a.TELJES_NÉV
+                           a.SZÜLETÉSI_DÁTUM
+                           a.LAKCÍM
+                           a.TELEFONSZÁM
+                       };
+            textBox1.Text = user.USERNAME;
+            textBox2.Text = user.TELJES_NÉV;
+            textBox3.Text = user.SZÜLETÉSI_DÁTUM;
+            textBox4.Text = user.LAKCÍM;
+            textBox5.Text = user.TELEFONSZÁM;
+
+            tipp_1.KeyPress += ValidateKeyPress;
+            tipp_2.KeyPress += ValidateKeyPress;
+            tipp_3.KeyPress += ValidateKeyPress;
+            tipp_4.KeyPress += ValidateKeyPress;
+            tipp_5.KeyPress += ValidateKeyPress;
+            
+
+
+
+
         }
 
         private void label12_Click(object sender, EventArgs e)
@@ -94,14 +122,14 @@ namespace IRF_Project
             }
 
         }
-        private void Excel_export()
+        private void Excel_export() //óra alapján
         {
             try
             {
                 xlApp = new Excel.Application();
                 xlWB = xlApp.Workbooks.Add(Missing.Value);
                 xlSheet = xlWB.ActiveSheet;
-                CreateTable();
+                CreateTable();  //ADATOK létrehozása
                 xlApp.Visible = true;
                 xlApp.UserControl = true;
             }
@@ -199,6 +227,11 @@ namespace IRF_Project
         }
 
         private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
         {
 
         }
