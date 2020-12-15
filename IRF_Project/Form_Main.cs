@@ -28,8 +28,10 @@ namespace IRF_Project
         {
             InitializeComponent();
             //LINQ lekérdezéshez
-           /* var user = from a in context.Jatekosok_adatai
-                       where = a.USERNAME = Start_up.logolt_user
+            /*using (var context = new Jatekosok_adataiEntities()) 
+            {
+                var user = from a in context.Jatekosok_adatai
+                       where ( a.USERNAME == Start_up.logolt_user)
                        select new
                        
                        {
@@ -39,19 +41,21 @@ namespace IRF_Project
                            a.LAKCÍM
                            a.TELEFONSZÁM
                        };
+
+            }
             textBox1.Text = user.USERNAME;
             textBox2.Text = user.TELJES_NÉV;
             textBox3.Text = user.SZÜLETÉSI_DÁTUM;
             textBox4.Text = user.LAKCÍM;
-            textBox5.Text = user.TELEFONSZÁM;*/
+            textBox5.Text = user.TELEFONSZÁM;
+            */
+            
 
             tipp_1.KeyPress += ValidateKeyPress;
             tipp_2.KeyPress += ValidateKeyPress;
             tipp_3.KeyPress += ValidateKeyPress;
             tipp_4.KeyPress += ValidateKeyPress;
             tipp_5.KeyPress += ValidateKeyPress;
-            
-
 
 
 
