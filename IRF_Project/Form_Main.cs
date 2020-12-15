@@ -57,6 +57,15 @@ namespace IRF_Project
 
         }
 
+        private void ValidateKeyPress(object sender, KeyPressEventArgs e) //LINQ
+        {
+            if (!Char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        
         private void label12_Click(object sender, EventArgs e)
         {
 
