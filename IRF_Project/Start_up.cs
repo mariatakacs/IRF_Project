@@ -24,7 +24,7 @@ namespace IRF_Project
             ActiveControl = textBox1;
         }
 
-        public void LoadData() 
+        public void LoadData() //4.gyak
         {
 
             using (var sr = new StreamReader("jelszavak.csv"))
@@ -52,7 +52,7 @@ namespace IRF_Project
                 this.Hide();
                 f2.ShowDialog();
                 this.Show();
-                MessageBox.Show("Sok sikert a játékhoz!");
+              
             }
             else
                 MessageBox.Show("A megadott username és/vagy jelszó hibás!");

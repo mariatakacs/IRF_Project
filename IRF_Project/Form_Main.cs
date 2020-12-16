@@ -23,32 +23,20 @@ namespace IRF_Project
         Random r = new Random();
         int[] nyeremenyek = { 0, 100, 2000, 5000, 10000, 25000 };
         bool played = false;
+        Jatekosok_adataiEntities context = new Jatekosok_adataiEntities();
 
         public Form_Main()
         {
             InitializeComponent();
             //LINQ lekérdezéshez
-            /*using (var context = new Jatekosok_adataiEntities()) 
-            {
-                var user = from a in context.Jatekosok_adatai
-                       where ( a.USERNAME == Start_up.logolt_user)
-                       select new
-                       
-                       {
-                           a.USERNAME
-                           a.TELJES_NÉV
-                           a.SZÜLETÉSI_DÁTUM
-                           a.LAKCÍM
-                           a.TELEFONSZÁM
-                       };
+            var user = context.Jatekosok_adatai.Where(a => a.USERNAME == Start_up.logolt_user).ToList();
 
-            }
-            textBox1.Text = user.USERNAME;
-            textBox2.Text = user.TELJES_NÉV;
-            textBox3.Text = user.SZÜLETÉSI_DÁTUM;
-            textBox4.Text = user.LAKCÍM;
-            textBox5.Text = user.TELEFONSZÁM;
-            */
+            textBox1.Text = user[0].USERNAME;
+            textBox2.Text = Convert.ToString(user[0].TELJES_NÉV);
+            textBox3.Text = Convert.ToString(user[0].SZÜLETÉSI_DÁTUM);
+            textBox4.Text = Convert.ToString(user[0].TELEFONSZÁM);
+            textBox5.Text = Convert.ToString(user[0].LAKCÍM);
+            
             
 
             tipp_1.KeyPress += ValidateKeyPress;
@@ -61,7 +49,7 @@ namespace IRF_Project
 
         }
 
-        private void ValidateKeyPress(object sender, KeyPressEventArgs e) //LINQ
+        private void ValidateKeyPress(object sender, KeyPressEventArgs e) 
         {
             if (!Char.IsDigit(e.KeyChar))
             {

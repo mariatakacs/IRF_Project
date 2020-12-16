@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Jatekosok_adataiModelStoreContainer" CdmEntityContainer="Jatekosok_adataiEntities">
+    <EntitySetMapping Name="Jatekosok_adatai">
+      <EntityTypeMapping TypeName="Jatekosok_adataiModel.Jatekosok_adatai">
+        <MappingFragment StoreEntitySet="Jatekosok_adatai">
+          <ScalarProperty Name="USERNAME" ColumnName="USERNAME" />
+          <ScalarProperty Name="TELJES_NÉV" ColumnName="TELJES_NÉV" />
+          <ScalarProperty Name="SZÜLETÉSI_DÁTUM" ColumnName="SZÜLETÉSI_DÁTUM" />
+          <ScalarProperty Name="LAKCÍM" ColumnName="LAKCÍM" />
+          <ScalarProperty Name="TELEFONSZÁM" ColumnName="TELEFONSZÁM" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

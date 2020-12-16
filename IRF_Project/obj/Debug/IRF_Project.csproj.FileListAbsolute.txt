@@ -17,3 +17,8 @@ C:\Users\User\source\repos\mariatakacs\IRF_Project\IRF_Project\obj\Debug\IRF_Pro
 C:\Users\User\source\repos\mariatakacs\IRF_Project\IRF_Project\obj\Debug\IRF_Project.csproj.ResolveComReference.cache
 C:\Users\User\source\repos\mariatakacs\IRF_Project\IRF_Project\bin\Debug\Jatekosok_adatai.mdf
 C:\Users\User\source\repos\mariatakacs\IRF_Project\IRF_Project\bin\Debug\Jatekosok_adatai_log.ldf
+C:\Users\User\source\repos\mariatakacs\IRF_Project\IRF_Project\bin\Debug\EntityFramework.dll
+C:\Users\User\source\repos\mariatakacs\IRF_Project\IRF_Project\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\source\repos\mariatakacs\IRF_Project\IRF_Project\bin\Debug\EntityFramework.xml
+C:\Users\User\source\repos\mariatakacs\IRF_Project\IRF_Project\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\source\repos\mariatakacs\IRF_Project\IRF_Project\obj\Debug\IRF_Project.csproj.CopyComplete
