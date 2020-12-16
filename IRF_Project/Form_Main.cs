@@ -36,15 +36,13 @@ namespace IRF_Project
             textBox4.Text = Convert.ToString(user[0].SZÜLETÉSI_DÁTUM);
             textBox5.Text = Convert.ToString(user[0].TELEFONSZÁM);
             textBox3.Text = Convert.ToString(user[0].LAKCÍM);
-            
-            
+
 
             tipp_1.KeyPress += ValidateKeyPress;
             tipp_2.KeyPress += ValidateKeyPress;
             tipp_3.KeyPress += ValidateKeyPress;
             tipp_4.KeyPress += ValidateKeyPress;
             tipp_5.KeyPress += ValidateKeyPress;
-
 
 
         }
