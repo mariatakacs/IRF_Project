@@ -33,9 +33,9 @@ namespace IRF_Project
 
             textBox1.Text = user[0].USERNAME;
             textBox2.Text = Convert.ToString(user[0].TELJES_NÉV);
-            textBox3.Text = Convert.ToString(user[0].SZÜLETÉSI_DÁTUM);
-            textBox4.Text = Convert.ToString(user[0].TELEFONSZÁM);
-            textBox5.Text = Convert.ToString(user[0].LAKCÍM);
+            textBox4.Text = Convert.ToString(user[0].SZÜLETÉSI_DÁTUM);
+            textBox5.Text = Convert.ToString(user[0].TELEFONSZÁM);
+            textBox3.Text = Convert.ToString(user[0].LAKCÍM);
             
             
 
@@ -73,7 +73,6 @@ namespace IRF_Project
 
         private void button1_Click(object sender, EventArgs e) //JÁTSZOK GOMB - VÉLETLEN SZÁMOK
         {
-
             int talalt = 0;
             TextBox[] eredmeny = { sors_1, sors_2, sors_3, sors_4, sors_5 };
             TextBox[] tipp = { tipp_1, tipp_2, tipp_3, tipp_4, tipp_5 };
@@ -99,7 +98,6 @@ namespace IRF_Project
                 {
                     tipp[i].BackColor = Color.Tomato;
                 }
-
             }
             label_talalt.Text = Convert.ToString(talalt);
             label_nyeremeny.Text = Convert.ToString(nyeremenyek[talalt]);
@@ -170,23 +168,6 @@ namespace IRF_Project
            
 
         }
-        private string GetCell(int x, int y) // EXCEL FORMÁZÁSÁHOZ
-        {
-            string ExcelCoordinate = "";
-            int dividend = y;
-            int modulo;
-
-            while (dividend > 0)
-            {
-                modulo = (dividend - 1) % 26;
-                ExcelCoordinate = Convert.ToChar(65 + modulo).ToString() + ExcelCoordinate;
-                dividend = (int)((dividend - modulo) / 26);
-            }
-            ExcelCoordinate += x.ToString();
-
-            return ExcelCoordinate;
-        }
-
 
         private void FormatTable() 
         {
@@ -212,6 +193,23 @@ namespace IRF_Project
             Excel.Range lastColRange = xlSheet.get_Range(GetCell(2, lastColID), GetCell(lastRowID, lastColID));
             lastColRange.Interior.Color = Color.LightGreen;
             
+        }
+
+        private string GetCell(int x, int y) // EXCEL FORMÁZÁSÁHOZ
+        {
+            string ExcelCoordinate = "";
+            int dividend = y;
+            int modulo;
+
+            while (dividend > 0)
+            {
+                modulo = (dividend - 1) % 26;
+                ExcelCoordinate = Convert.ToChar(65 + modulo).ToString() + ExcelCoordinate;
+                dividend = (int)((dividend - modulo) / 26);
+            }
+            ExcelCoordinate += x.ToString();
+
+            return ExcelCoordinate;
         }
 
         private void panel5_Paint(object sender, PaintEventArgs e)
